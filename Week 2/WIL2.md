@@ -67,26 +67,49 @@ HTTP와 HTTPS의 차이점은 데이터를 전송하기 전 암호화를 거치�
 Restful URI 설계
 
 이벤트 목록 조회
+
     - GET /events
+
 이벤트 조회
+
     - GET /events/{eventId}
+
 이벤트 등록
+
     - POST /events/{eventId}
+
 이벤트 수정
+
     - PATCH /events/{eventId}
+
 이벤트 삭제
+
     - DELETE /events/{eventId}
+
 이벤트 상태 변경
+
     - PATCH /events/{eventId}/state
+
 특정 이벤트의 주문 목록 조회
+
     - GET /events/{eventId}/orders
+
 멤버 목록 조회
+
     - GET /members
+
 특정 멤버 권한 변경
+
     - PATCH /members/{memberId}/permission
+
 특정 멤버 정보 조회
+
     - GET /members/{memberId}/information
+
 특정 멤버 정보 변경
+
     - PATCH /members/{memberId}/information
+
 멤버 등록
+
     - POST /members/{memberId}
