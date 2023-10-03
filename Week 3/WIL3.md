@@ -21,5 +21,5 @@ IoC는 제어의 역전을 의미하며, 프로그램의 제어 흐름을 직접
 
 스프링 IoC 컨테이너란 
 
-![결과 이미지 1](result 1.PNG)
-![결과 이미지 2](result 2.PNG)
+![poster](./result%201.PNG)
+![poster](./result%202.PNG)
