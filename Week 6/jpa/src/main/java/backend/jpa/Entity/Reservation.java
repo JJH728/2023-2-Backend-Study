@@ -1,12 +1,12 @@
-package Entity;
+package backend.jpa.Entity;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.hibernate.dialect.function.TruncFunction;
+import java.util.List;
 
-import java.time.LocalDateTime;
-
+@Getter
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Reservation {
@@ -14,11 +14,11 @@ public class Reservation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    private Doctor doctor;
+    @OneToMany
+    private List<Doctor> doctors;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    private Patient patient;
+    @OneToMany
+    private List<Patient> patients;
 
-    private LocalDateTime time;
+    private String time;
 }
